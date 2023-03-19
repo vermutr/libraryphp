@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(116.17deg, #FBCA6D 1.82%, #EFA618 79.12%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 2.5em 15%;
+}
+
+li, a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links li {
+    width: 100%;
+    display: list-item;
+}
+
+.homepage {
+    font-weight: 600;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1em solid gray;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav_links li:nth-child(1) {
+    padding-left: 2em;
+    padding-right: 1em;
+    width: 30%;
+}
+
+
+.nav_links li:nth-child(3) {
+    width: 10%;
+    padding-right: 1em;
+    text-align: right;
+}
+
+.nav_links li:nth-child(4) {
+    width: 10%;
+    padding-right: 1em;
+    text-align: right;
+}
+
+.nav_links li:nth-child(5) {
+    width: 10%;
+    text-align: right;
+}
+
+img.logo {
+    margin-top: 17px;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 44%;
+    padding: 1em 5%;
+}
+
+.title-info {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 49px;
+
+    margin-bottom: 0.5em;
+
+
+    color: #000000;
+}
+
+.info {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 37px;
+
+    color: #000000;
+}
+
+button {
+    background: linear-gradient(92.75deg, #E65454 6.13%, #F38888 100.87%, rgba(255, 87, 87, 0) 100.88%, rgba(220, 0, 0, 0) 100.88%);
+    filter: drop-shadow(0px 10px 50px rgba(238, 118, 118, 0.58));
+    border-radius: 30px;
+
+    font-family: 'Montserrat', sans-serif;
+    height: 15%;
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    color: white;
+
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 4em;
+    width: 40%;
+
+    margin: 4em 1em 1em 8em;
+}
+
+.footer {
+    display: none;
+}
+
+.mobile-button-container {
+    display: none;
+}
+
+@media only screen and (max-device-width: 420px) {
+    .container {
+        flex-direction: column;
+        position: relative;
+    }
+
+    .main-content {
+        flex-direction: column;
+    }
+
+    .desktop-button {
+        display: none;
+    }
+
+    .mobile-button-container {
+        display: flex;
+        justify-content: center;
+        padding-top: 10em;
+    }
+
+    .mobile-button {
+        width: 80%;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 10;
+        margin: 0;
+        padding: 0;
+        color: white;
+    }
+
+    .footer {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        background: linear-gradient(92.35deg, #FBCA6D 19.58%, rgba(251, 202, 109, 0) 84.73%);
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    .nav_links_footer {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav_links_footer li {
+        width: 100%;
+        display: list-item;
+    }
+
+    .title-info {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 100px;
+        line-height: 110px;
+    }
+
+    .info {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 80px;
+        line-height: 110px;
+        padding: 0 1em;
+    }
+
+    .main-info {
+        width: 100%;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    img.footer-img {
+        width: 3em;
+    }
+
+    .book-img {
+        width: 70%;
+    }
+
+    .nav_links_footer li:nth-child(1) {
+        width: 20%;
+        text-align: center;
+    }
+
+    .nav_links_footer li:nth-child(2) {
+        width: 20%;
+        text-align: center;
+    }
+
+    .nav_links_footer li:nth-child(3) {
+        width: 20%;
+        text-align: center;
+    }
+
+    .nav_links_footer li:nth-child(4) {
+        width: 20%;
+        text-align: center;
+    }
+
+    .nav_links_footer li:nth-child(5) {
+        width: 20%;
+        text-align: center;
+    }
+
+}

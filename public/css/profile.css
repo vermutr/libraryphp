@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(116.17deg, #FBCA6D 1.82%, #EFA618 79.12%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 2.5em 15%;
+}
+
+li, a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    color: black;
+    text-decoration: none;
+}
+
+.nav_links {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav_links li {
+    width: 100%;
+    display: list-item;
+}
+
+nav {
+    width: 100%;
+}
+
+.nav_links li:nth-child(1) {
+    padding-left: 2em;
+    padding-right: 1em;
+    width: 30%;
+}
+
+
+.nav_links li:nth-child(3) {
+    width: 10%;
+    padding-right: 1em;
+    text-align: right;
+}
+
+.nav_links li:nth-child(4) {
+    width: 10%;
+    padding-right: 1em;
+    text-align: right;
+}
+
+.nav_links li:nth-child(5) {
+    width: 10%;
+    text-align: right;
+}
+
+img.logo {
+    margin-top: 17px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    padding: 0 15% 1em 15%;
+    text-align: center;
+    place-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 37px;
+    color: #000000;
+}
+
+.book-list {
+    display: flex;
+    justify-content: center;
+    padding: 2em 10%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5em;
+    overflow: auto;
+}
+
+.book-item {
+    border-bottom: 0.2em solid gray;
+    padding-bottom: 2em;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.book-info {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.delete-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-button {
+    background: #1C1A17;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    width: 100%;
+    height: 3.5em;
+}
+
+.button-delete {
+    display: inline-block;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    background: #1C1A17;
+    border: 0;
+    padding-top: 5%;
+}
+
+.book-name {
+    padding: 0.3em;
+}
+
+.book-author {
+    padding-left: 0.3em;
+}
+
+.book-price {
+    padding: 1em 0.2em 0.2em 0.2em;
+}
