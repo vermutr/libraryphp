@@ -56,17 +56,6 @@ class AccountRepository extends Repository
         } else {
             return null;
         }
-//
-//        if(password_verify($user['password'], $hashed_password)) {
-//            return new \model\Account(
-//                $user['id'],
-//                $user['email'],
-//                $user['password'],
-//                $user['role']
-//            );
-//        } else {
-//            return null;
-//        }
     }
 
     public function createUser($email, $hashed_password)

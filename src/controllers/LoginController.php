@@ -26,8 +26,7 @@ class LoginController extends AppController
         session_start();
         $email = $_POST["email"];
         $registered = $_POST["registered"];
-        $hashed_password = $_POST["password"];
-        //$hashed_password = password_hash($password, PASSWORD_DEFAULT);
+        $hashed_password = md5(md5($_POST["password"]));
 
         if ($registered === "true") {
             $accountDb = $this->loginAction($email, $hashed_password);
