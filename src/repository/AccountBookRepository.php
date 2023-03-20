@@ -29,7 +29,6 @@ class AccountBookRepository extends Repository
 
     public function saveAccountBook(string $bookId)
     {
-        $this->database->beginTransaction();
         $account = $this->accountRepository->getAccount($_COOKIE['email']);
 
         if ($account === null) {
