@@ -33,9 +33,10 @@ class LoginController extends AppController
         } else {
             $accountDb = $this->registrationAction($email, $hashed_password);
         }
-
-        $this->setCookieAndSession($accountDb);
-        $this->redirectToPage("/main");
+        if ($accountDb !== null) {
+            $this->setCookieAndSession($accountDb);
+            $this->redirectToPage("/main");
+        }
     }
 
     private function loginAction($email, $hashed_password): ?\model\Account
